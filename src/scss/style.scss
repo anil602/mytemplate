@@ -1,0 +1,54 @@
+//  =============================
+//  @author: Nishant Chauhan
+//  @package: Main Stylesheet.
+//  =============================
+//  Import custom defined variables / mixins
+@import "mixins/variables";
+@import "mixins/spacers";
+@import "mixins/theme-colors";
+@import "mixins/breakpoints";
+//  Import bootstrap core library
+@import "vendor/bootstrap-imports";
+
+// ==============
+// Base Elements
+// ==============
+html,
+body {
+  height: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  font-family: $font-primary;
+  font-weight: 300;
+}
+
+body {
+  background-color: $white;
+  min-width: $site-container-min-width;
+}
+
+// Main page wrapper for a full website container {use on all pages};
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+// site width
+.application-container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: $site-container-max-width;
+}
+
+// Custom imports
+@import "global/helper-classes";
+@import "global/global-buttons";
+@import "global/header";
+@import "global/footer";
+
+
+@import "content/custom-styles";
+@import "content/homepage";
+

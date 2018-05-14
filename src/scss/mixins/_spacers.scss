@@ -1,0 +1,51 @@
+//  ====================================
+//  @author: Nishant Chauhan
+//  @package: Helper classes for spacing
+//  ====================================
+
+// Unit values for creating helpers
+$units: (
+  0,
+  15,
+  30,
+  45
+);
+
+// Mixin to generate classes
+@mixin spacing-helpers() {
+  // For each unit
+  @each $value in $units {
+    // ============== // Margin classes // ============== // bottom margins
+    .bm#{$value} {
+      margin-bottom: #{$value}px;
+    }
+    // Top margins
+    .tm#{$value} {
+      margin-top: #{$value}px;
+    }
+
+    // margin right
+    .mr#{$value} {
+      margin-right: #{$value}px;
+    }
+
+    // margin left
+    .ml#{$value} {
+      margin-left: #{$value}px;
+    }
+
+    // ===============
+    // Padding classes
+    // ===============
+    // Horizontal padding
+    .ph#{$value} {
+      padding-left: #{$value}px;
+      padding-right: #{$value}px;
+    }
+    // vertical padding
+    .pv#{$value} {
+      padding-top: #{$value}px;
+      padding-bottom: #{$value}px;
+    }
+  }
+}

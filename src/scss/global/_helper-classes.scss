@@ -1,0 +1,19 @@
+//  ====================================
+//  @author: nChauhan
+//  @package: Global helper classes
+//  ====================================
+
+// For full element width {using _ in name to avoid conflict with magento "block" class}
+._block {
+  float: left;
+  width: 100%;
+}
+
+// Simple display flex for items
+._flex {
+  display: flex;
+  width: 100%;
+}
+
+// Spacing mixin for spacing helper classes
+@include spacing-helpers();

@@ -1,0 +1,51 @@
+//  ====================================
+//  @author: SYED
+//  @package: Global Buttons
+//  ====================================
+
+.btn {
+  text-transform: capitalize;
+  font-weight: 500;
+  border-width: 2px;
+
+  // Default button
+  &__default {
+    @include button-variant($white, $primary-color, $primary-color, $alt-color, '', $alt-color);
+  }
+
+  &__inverse {
+    @include button-variant($primary-color, $white, $white);
+  }
+
+  // White button
+  &__white {
+    @include button-variant($gray-light, $white, $white);
+  }
+
+  // White Hollow / Ghost button
+  &__white-hollow {
+    @include button-variant($white, transparent, $white, rgba($black, .2));
+  }
+
+  // Hollow / Ghost button
+  &__hollow {
+    @include button-variant($primary-color, transparent, $primary-color);
+  }
+
+  // Notify Me
+  &__notify {
+    @include button-variant($black, transparent, $black);
+  }
+
+  // Grey variant
+  &__grey {
+    @include button-variant($white, darken($dark-grey, 30%), darken($dark-grey, 30%));
+  }
+
+  // Grey variant
+  &__grey-hollow {
+    @include button-variant(darken($dark-grey, 18%), transparent, darken($dark-grey, 18%), darken($dark-grey, 18%), $white);
+  }
+
+}
+

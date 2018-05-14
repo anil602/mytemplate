@@ -1,0 +1,82 @@
+//  ==========================================
+//  @author: Nishant Chauhan
+//  @package: Device / Resolution breakpoints
+//  ==========================================
+
+// ============== IMPORTANT ==================
+// Follow the sequence of media-queries.
+// Only use the pre-defined media queries in this file.
+// Avoid override of css by media queries, write properties to be modified by
+// another media query in device specific pre-defined breakpoint to avoid conflict.
+// Items that will remain constant across all screens should only be written directly in a selector, rest all
+// in media queries.
+
+// Default style breakpoint for large screens
+@mixin desktop {
+  @media (min-width: ($screen-md)) {
+    // 1024
+    @content;
+  }
+}
+
+
+// Tablet / iPad specific
+@mixin tablet {
+  @media (min-width: ($screen-sm)) and (max-width: ($screen-md - 1)) {
+    // 768 to 1023
+    @content;
+  }
+}
+
+
+// Tablet portrait
+@mixin tablet__portrait {
+  @media (min-width: ($screen-sm)) and (max-width: ($screen-md - 1)) and (orientation: portrait) {
+    // 768 to 1023
+    @content;
+  }
+}
+
+
+// Tablet landscape
+@mixin tablet__landscape {
+  @media (min-width: ($screen-sm)) and (max-width: ($screen-md - 1)) and (orientation: landscape) {
+    // 768 to 1023
+    @content;
+  }
+}
+
+
+// Mobile / Hand-held devices {currently used for tablet portrait & phones}
+@mixin phone {
+  @media (max-width: ($screen-sm - 1)) {
+    // 767
+    @content;
+  }
+}
+
+
+// For designs above phone {Includes both desktop & tablets}
+@mixin above__phone {
+  @media (min-width: ($screen-sm)) {
+    // 768
+    @content;
+  }
+}
+
+
+// Small devices like iPhone 5s & others.
+@mixin small__phone {
+  @media (max-width: ($screen-xs)) {
+    // 480
+    @content;
+  }
+}
+
+
+// IE specific {for hacks, if any}
+@mixin ie {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    @content;
+  }
+}
