@@ -5,8 +5,25 @@
 
 /**Header start**/
 
-.header{
-    background: #ccc;
+header{
+    background: #ededed;
     height: 100px;
     width: 100%;
+}
+.header-content{
+	width:1000px;
+	margin:0 auto;
+}
+
+nav[role=navigation] {
+}
+.nav {
+    &__list {
+      &__item {
+      }    
+    }
+  &__link {
+    &--active { 
+    }
+  }
 }

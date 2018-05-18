@@ -2793,7 +2793,7 @@ body {
   height: 100%;
   padding: 0 !important;
   margin: 0 !important;
-  font-family: "Montserrat", sans-serif, Arial;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
 }
 
@@ -3316,6 +3316,11 @@ fieldset[disabled] .btn__grey-hollow.focus {
   width: 1000px;
 }
 
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
 .small-container {
   width: 100%;
   max-width: 700px;
@@ -3324,10 +3329,15 @@ fieldset[disabled] .btn__grey-hollow.focus {
 }
 
 /**Header start**/
-.header {
-  background: #ccc;
+header {
+  background: #ededed;
   height: 100px;
   width: 100%;
+}
+
+.header-content {
+  width: 1000px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.min.css.map */
