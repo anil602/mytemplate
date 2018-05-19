@@ -5,25 +5,19 @@
 
 /**Header start**/
 
-header{
-    background: #ededed;
-    height: 100px;
-    width: 100%;
+#topbar {
+  padding: 15px 0;
+  font-size: .8rem;
+  text-transform: uppercase;
+  width: 1000px;
+    margin: 0 auto;
 }
-.header-content{
-	width:1000px;
-	margin:0 auto;
-}
-
-nav[role=navigation] {
-}
-.nav {
-    &__list {
-      &__item {
-      }    
-    }
-  &__link {
-    &--active { 
-    }
+.wrapper{
+  &__nospace li{
+    
+    display: inline-block;
+    margin-right: 10px;
+    padding-right: 15px;
+    border-right: 1px solid;
   }
 }

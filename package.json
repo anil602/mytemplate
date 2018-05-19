@@ -1,7 +1,7 @@
 {
-  "name": "MunchAdo",
+  "name": "Test",
   "version": "0.1.0",
-  "description": "Build Your Own Pizza",
+  "description": "Test project",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "grunt": "^1.0.1",
