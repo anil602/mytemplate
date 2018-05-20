@@ -3,6 +3,7 @@
 .hoc {
   display: block;
   margin: 0 auto;
+  width:1000px;
 }
 .wrapper {
   display: block;
@@ -14,4 +15,9 @@
 .flex{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+*, *::before, *::after {
+  transition: all .3s ease-in-out;
 }
