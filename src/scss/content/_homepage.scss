@@ -45,15 +45,13 @@
   }
 }
 
+
 /**Nav bar New**/
 .row1 {
   color: #474747;
   background-color: #EEEEEE;
 }
-.header{
-  width:1000px;
-  margin: 0 auto;
-}
+
 
 /**sub header**/
 .wrapper{
@@ -111,9 +109,14 @@
 
 &__one_third{
   list-style: none;
-  padding: 15px;
-
+  margin: 14px;
+  width: 30%;
 }
+&__alignview{
+width:1000px;
+margin: 0 auto;
+}
+
 &__introblocks article {
    display: block; 
   position: relative;
