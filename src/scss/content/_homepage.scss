@@ -4,16 +4,6 @@
 //==========================\\
 
 /**Header start**/
-
-#topbar {
-  padding: 15px 0;
-  font-size: .8rem;
-  text-transform: uppercase;
-  width: 1000px;
-    margin: 0 auto;
-}
-/**Main wrapper**/
-
 /**Nav bar**/
 .header{
   /**listing**/
@@ -24,6 +14,12 @@
     border-right: 1px solid;
     font-size: 10px;
   }
+  
+&__topbar {
+  padding: 15px 0;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
   &__nospace li:last-child{
     border-right: none;
   }

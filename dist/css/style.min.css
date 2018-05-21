@@ -2922,15 +2922,6 @@ a:hover {
 }
 
 /**Header start**/
-#topbar {
-  padding: 15px 0;
-  font-size: .8rem;
-  text-transform: uppercase;
-  width: 1000px;
-  margin: 0 auto;
-}
-
-/**Main wrapper**/
 /**Nav bar**/
 .header {
   /**listing**/
@@ -2942,6 +2933,12 @@ a:hover {
   padding-right: 15px;
   border-right: 1px solid;
   font-size: 10px;
+}
+
+.header__topbar {
+  padding: 15px 0;
+  font-size: .8rem;
+  text-transform: uppercase;
 }
 
 .header__nospace li:last-child {
