@@ -15,7 +15,7 @@
 /**Main wrapper**/
 
 /**Nav bar**/
-.wrapper{
+.header{
   /**listing**/
   &__nospace li{
     display: inline-block;
@@ -54,6 +54,8 @@
   width:1000px;
   margin: 0 auto;
 }
+
+/**sub header**/
 .wrapper{
   /**Homepage images**/
   &__bgded {
@@ -65,6 +67,7 @@
     padding: 150px 0 250px;
     color: $white;
 }
+&__pushright li{margin-right: 20px;}
 &__article {
   display: block;
   max-width: 65%;
@@ -83,3 +86,76 @@
 }
 }
 
+
+/**section one**/
+.wrapper{
+  &__introblocks{
+        color: #474747;
+        background-color: #FFFFFF;
+        position: relative;
+        z-index: 1;
+        margin: -180px 0 80px;
+        padding: 80px 0 0 0;
+        border-radius: 10px;
+        font-size: 14px;
+  }
+
+  /**section title**/
+  &__sectiontitle {
+    display: block;
+    max-width: 55%;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+&__sectiontitle .heading{margin-bottom: 0;}
+
+&__one_third{
+  list-style: none;
+  padding: 15px;
+
+}
+&__introblocks article {
+   display: block; 
+  position: relative;
+  padding: 0 0 0 95px;
+  line-height: normal;
+  text-align: left;
+}
+&__introblocks article  i{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85px;
+  overflow: hidden;
+  line-height: 1;
+  font-size: 65px;
+}
+&__sectiontitle {
+  display: block;
+  max-width: 55%;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+&__figure{
+  max-width: 320px;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+&__figure img{
+  margin-bottom: 30px;
+}
+}
+
+
+/**Footer**/
+.footer{
+  &__row5{
+    color: $white;
+    background-color: rgba(0,0,0,.5);
+  }
+&__copyright{
+    padding: 20px 0;
+}
+}

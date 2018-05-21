@@ -18,12 +18,14 @@
 </head>
 
 <body>
-    <div class="wrapper row0">
+
+  <!--Top header-->
+    <div class="header row0">
         <div id="topbar" class="hoc clear flex"> 
       
           <div class="fl_left">
-            <ul class="wrapper__nospace">
-              <li><a href="index.html"><i class="fas fa-home wrapper__home-icon"></i></a></li>
+            <ul class="header__nospace list-styling">
+              <li><a href="index.html"><i class="fas fa-home header__home-icon"></i></a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
               <li><a href="#">Login</a></li>
@@ -31,14 +33,15 @@
             </ul>
           </div>
           <div class="fl_right">
-            <ul class="wrapper__nospace">
-              <li><i class="fa fa-phone wrapper__phone-icon" aria-hidden="true"></i> +00 (123) 456 7890</li>
-              <li><i class="fa fa-envelope wrapper__envelope-icon"></i> info@domain.com</li>
+            <ul class="header__nospace">
+              <li><i class="fa fa-phone header__phone-icon" aria-hidden="true"></i> +00 (123) 456 7890</li>
+              <li><i class="fa fa-envelope header__envelope-icon"></i> info@domain.com</li>
             </ul>
           </div>
         
         </div>
-      </div>
+    </div>
+    <!--Sub header-->
   <div class="wrapper row1">
     <header id="header" class="hoc flex"> 
       
@@ -46,16 +49,24 @@
         <h1><a href="index.html">Template</a></h1>
       </div>
       <nav id="mainav" class="fl_right">
-        <ul class="wrapper__nospace">
+        <!-- <ul class="wrapper__nospace">
           <li><a href="index.html"><i class="fas fa-home wrapper__home-icon"></i></a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">Login</a></li>
           <li><a href="#">Register</a></li>
-        </ul>
+        </ul> -->
+        <ul class="header__nospace list-styling">
+            <li><a href="index.html"><i class="fas fa-home header__home-icon"></i></a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+          </ul>
       </nav>
          </header>
   </div>
+  <!--section one-->
 <div class="wrapper">
    <div class="bgded overlay" style="background-image:url('dist/images/01.png');">
   <div class="hoc wrapper__pageintro"> 
@@ -64,7 +75,7 @@
       <p class="wrapper__home-tilte">Justo at ante lobortis</p>
       <dfn><h3 class="wrapper__heading dfn">Varius aenean laoreet mauris</h3></dfn>
       <footer>
-        <ul class="wrapper__nospace inline pushright">
+        <ul class="inline wrapper__pushright">
           <li><a class="btn" href="#">Quam scelerisque</a></li>
           <li><a class="btn inverse" href="#">Sagittis dignissim</a></li>
         </ul>
@@ -72,10 +83,92 @@
     </div>
    
   </div>
-</div></div>
- 
+</div>
+</div>
+   <!--section Two-->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
    
+    <div class="wrapper__introblocks">
+      <div class="wrapper__sectiontitle">
+        <dfn><h6 class="heading">Tellus malesuada dignissim</h6></dfn>
+        <p>Nullam tincidunt ex vel volutpat accumsan ut lobortis metus</p>
+      </div>
+      <ul class="list-styling btme80 _flex ">
+        <li class="wrapper__one_third first">
+          <article><i class="far fa-gem"></i>
+            <h6 class="heading font-x1"><a href="#">Feugiat maximus nisi</a></h6>
+            <p>Sem volutpat massa sed tristique nisi sem sed est cras pulvinar augue libero…</p>
+          </article>
+        </li>
+        <li class="wrapper__one_third">
+          <article><i class="fab fa-fort-awesome"></i>
+            <h6 class="heading font-x1"><a href="#">Vel imperdiet libero</a></h6>
+            <p>Condimentum id donec eu eros quis ligula sollicitudin malesuada scelerisque…</p>
+          </article>
+        </li>
+        <li class="wrapper__one_third">
+          <article><i class="fab fa-forumbee"></i>
+            <h6 class="heading font-x1"><a href="#">Dui nam sed tristique</a></h6>
+            <p>Nunc sed ligula viverra egestas tincidunt accumsan porta eget lorem maecenas…</p>
+          </article>
+        </li>
+      </ul>
+      <p class="center"><a class="btn" href="#">Eleifend dui auctor</a></p>
+    </div>
+  
+    <hr class="btme80">
+    
+    <section>
+      <div class="wrapper__sectiontitle">
+        <dfn><h6 class="heading">Pulvinar enim nibh pretium</h6></dfn>
+        <p>Nulla sed tincidunt metus massa accumsan enim in leo massa</p>
+      </div>
+      <ul class="list-styling group overview _flex inline">
+        <li class="wrapper__one_third">
+          <div class="wrapper__figure"><a href="#"><img src="dist/images/320x240.png" alt=""></a>
+            <figcaption>
+              <h6 class="heading">Aliquet non sapien in</h6>
+              <p>Congue suscipit nulla aliquam fermentum ac justo eu tincidunt integer.</p>
+            </figcaption>
+          </div>
+        </li>
+        <li class="wrapper__one_third">
+          <div class="wrapper__figure"><a href="#"><img src="dist/images/320x240.png" alt=""></a>
+            <figcaption>
+              <h6 class="heading">Eleifend lacus metus</h6>
+              <p>Suscipit egestas vivamus at velit ultrices malesuada ex eu rutrum arcu.</p>
+            </figcaption>
+          </div>
+        </li>
+        <li class="wrapper__one_third">
+          <div class="wrapper__figure"><a href="#"><img src="dist/images/320x240.png" alt=""></a>
+            <figcaption>
+              <h6 class="heading">Fusce facilisis congue</h6>
+              <p>Sapien sit amet tempor nisl mollis sed sed tristique nunc pretium mi.</p>
+            </figcaption>
+          </div>
+        </li>
+      </ul>
+    </section>
+   
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
 
+  <!--Foter-->
+  <div class="footer">
+    <div class="footer__row5 "> 
+      <div class="hoc clear flex footer__copyright"> 
+       
+        <p class="fl_left">Copyright © 2017 - All Rights Reserved - <a href="#">Domain Name</a></p>
+        <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+       
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

@@ -21,3 +21,36 @@
 *, *::before, *::after {
   transition: all .3s ease-in-out;
 }
+.inline * {
+  display: inline-block;
+}
+.btn:hover, .btn.inverse {
+  color: inherit;
+  background-color: transparent;
+  border-color: inherit;
+}
+.heading {
+  margin: 0 0 20px 0;
+  font-size: 22px;
+  line-height: normal;
+  font-weight: normal;
+  font-style: italic;
+  text-transform: capitalize;
+}
+a{color:$primary-color;}
+a:hover{text-decoration: none;}
+
+.center {
+  text-align: center;
+}
+
+
+.list-styling{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.btme80{
+  padding: 0;
+  margin-bottom: 80px;
+}

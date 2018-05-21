@@ -10,7 +10,7 @@
     border-radius: none;
 }
 .btn, .btn.inverse:hover {
-    color: #FFFFFF;
-    background-color: #FF090F;
-    border-color: #FF090F;
+    color: $white;
+    background-color: $primary-color;
+    border-color:$primary-color;
 }
