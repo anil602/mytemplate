@@ -3,158 +3,135 @@
 //=====@Homepage css=========\\
 //==========================\\
 
-/**Header start**/
-/**Nav bar**/
-.header{
-  /**listing**/
-  &__nospace li{
-    display: inline-block;
-    margin-right: 10px;
-    padding-right: 15px;
-    border-right: 1px solid;
-    font-size: 10px;
-  }
-  
-&__topbar {
-  padding: 15px 0;
-  font-size: .8rem;
-  text-transform: uppercase;
-}
-  &__nospace li:last-child{
-    border-right: none;
-  }
-  &__nospace li a{
-    color:$black;
-    font-size: 12px;
-    text-decoration: none;
-  }
-  &__home-icon{
-    color:#D01818;
-  }
-  &__phone-icon{
-    color:$black;
-    font-size:10px;
-  }
-  &__envelope-icon{
-    color:$black;
-    font-size:10px;
-  }
-}
-
-
-/**Nav bar New**/
-.row1 {
-  color: #474747;
-  background-color: #EEEEEE;
-}
-
-
-/**sub header**/
-.wrapper{
-  /**Homepage images**/
-  &__bgded {
+.homepage{
+ 
+  /**BG - homepage**/
+  &__background{
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+  }
+
   &__pageintro {
     padding: 150px 0 250px;
     color: $white;
-}
-&__pushright li{margin-right: 20px;}
-&__article {
-  display: block;
-  max-width: 65%;
-  margin: 0 auto;
-  text-align: center;
-}
-&__home-tilte{
-  margin: 0 0 20px 0;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  letter-spacing: 5px;
-}
-&__heading{
-  margin-bottom: 20px;
+ }
+
+ &__list-styling{
+   @extend .header__list-styling ;
+   color:$white;
+ }
+
+ &__home-tilte{
+   margin: 0 0 20px 0;
+   text-transform: uppercase;
+   font-size: 1.2rem;
+   letter-spacing: 5px;
+ }
+
+ &__heading{
+   margin-bottom: 20px;
     font-size: 4rem;
-}
+ }
+
+ &__list-styling li{
+   margin-right: 20px;
+   border-right: none;
+   a{
+    color:$white;
+   }
+ }
+
+ &__article {
+   display: block;
+   max-width: 65%;
+   margin: 0 auto;
+   text-align: center;
+ }
+
+ /**section title**/
+ &__sectiontitle {
+   display: block;
+   max-width: 55%;
+   margin: 0 auto 80px;
+   text-align: center;
+  }
+
+ &__sectiontitle .heading{
+   margin-bottom: 0;
+  }
+
 }
 
 
-/**section one**/
-.wrapper{
+/**Section two (category)**/
+
+.category{
+  
   &__introblocks{
-        color: #474747;
-        background-color: #FFFFFF;
-        position: relative;
-        z-index: 1;
-        margin: -180px 0 80px;
-        padding: 80px 0 0 0;
-        border-radius: 10px;
-        font-size: 14px;
+    color: #474747;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+    margin: -180px 0 80px;
+    padding: 80px 0 0 0;
+    border-radius: 10px;
+    font-size: 14px;
   }
 
-  /**section title**/
+  &__introblocks article {
+    display: block; 
+   position: relative;
+   padding: 0 0 0 95px;
+   line-height: normal;
+   text-align: left;
+ }
+
+  &__introblocks article  i{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85px;
+    overflow: hidden;
+    line-height: 1;
+    font-size: 65px;
+  }
+
   &__sectiontitle {
-    display: block;
-    max-width: 55%;
-    margin: 0 auto 80px;
-    text-align: center;
-}
-&__sectiontitle .heading{margin-bottom: 0;}
-
-&__one_third{
-  list-style: none;
-  margin: 14px;
-  width: 30%;
-}
-&__alignview{
-width:1000px;
-margin: 0 auto;
-}
-
-&__introblocks article {
-   display: block; 
-  position: relative;
-  padding: 0 0 0 95px;
-  line-height: normal;
-  text-align: left;
-}
-&__introblocks article  i{
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 85px;
-  overflow: hidden;
-  line-height: 1;
-  font-size: 65px;
-}
-&__sectiontitle {
-  display: block;
-  max-width: 55%;
-  margin: 0 auto 80px;
-  text-align: center;
-}
-&__figure{
-  max-width: 320px;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-&__figure img{
-  margin-bottom: 30px;
-}
-}
-
-
-/**Footer**/
-.footer{
-  &__row5{
-    color: $white;
-    background-color: rgba(0,0,0,.5);
+    @extend .homepage__sectiontitle ;
   }
-&__copyright{
-    padding: 20px 0;
+
+  &__one_third{
+    list-style: none;
+    margin: 14px;
+    width: 30%;
+  }
+  
 }
+
+/**Section three (services)**/
+.services{
+
+  &__figure{
+    max-width: 320px;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  &__figure img{
+    margin-bottom: 30px;
+  }
+  &__one_third{
+    @extend .category__one_third ;
+  }
+  &__alignview{
+  width:1000px;
+  margin: 0 auto;
+  }
+  &__sectiontitle{
+    @extend .category__sectiontitle ;
+  }
+
 }
+

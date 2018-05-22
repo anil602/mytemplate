@@ -1,0 +1,28 @@
+
+/**Footer**/
+.footer{
+
+    &__wrapper{
+        color: $white;
+        background-color: rgba(0,0,0,.5);
+        padding: 20px 0;
+    }
+    
+    &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a{color: $primary-color}
+    }
+  }
+
+.block{
+      display: flex;
+      width: 100%;
+}
+
+.application-container{
+    width: 1200px;
+    margin: 0 auto;
+}
